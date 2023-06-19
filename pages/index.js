@@ -8,16 +8,18 @@ import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 
+
 export default function Index({ posts, globalData }) {
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
-      <main className="w-full">
+      <main className="w-full ">
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1>
-        <ul className="w-full">
+
+        <ul className="w-full grid grid-cols-2 gap-2 ">
           {posts.map((post) => (
             <li
               key={post.filePath}
@@ -39,7 +41,9 @@ export default function Index({ posts, globalData }) {
                       {post.data.description}
                     </p>
                   )}
-                  <ArrowIcon className="mt-4" />
+                  
+                  <ArrowIcon className='absolute bottom-2  ' />
+                  
                 </a>
               </Link>
             </li>

@@ -2,7 +2,7 @@ exports.COLOR_THEMES = {
   default: {
     colors: {
       primary: '#7D7AFF',
-      'gradient-1': '#7d7aff',
+      'gradient-1': '#7d7a22',
       'gradient-2': '#2121e2',
       'gradient-3': '#00fff0',
       'gradient-4': '#8785FF',
